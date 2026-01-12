@@ -22,138 +22,81 @@
                 <span class="text-white text-4xl font-semibold font-poppins">ife</span>
             </div>
             <nav class="flex-1 mt-6">
-                {{-- <ul class="space-y-1">
+                <ul class="space-y-1">
                     <li>
-                        <a href="{{ url('manager/dashboard') }}"
-                            class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                        <a href="{{ route('superadmin.dashboard') }}"
+                            class="flex items-center px-6 py-3 text-teal-500 font-semibold bg-slate-800 rounded-l-full">
                             <span class="material-icons mr-3">dashboard</span>
                             Dashboard
                         </a>
                     </li>
                     <li>
                         <div class="flex items-center px-6 py-3 text-white font-semibold rounded-l-full cursor-default">
-                            <span class="material-icons mr-3">directions_car</span>
-                            Vehicles
+                            <span class="material-icons mr-3">sports_cricket</span>
+                            Players
                         </div>
                         <ul class="ml-8 space-y-1">
                             <li>
-                                <a href="{{ url('addvehicle') }}"
+                                <a href="{{ route('players.create') }}"
                                     class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                                    <span class="material-icons mr-3">add_circle_outline</span>
-                                    Add Vehicle
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ url('allvehicles') }}"
-                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                                    <span class="material-icons mr-3">list_alt</span>
-                                    All Vehicles
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="flex items-center px-6 py-3 text-white font-semibold rounded-l-full cursor-default">
-                            <span class="material-icons mr-3">assignment</span>
-                            Bookings
-                        </div>
-                        <ul class="ml-8 space-y-1">
-                            <li>
-                                <a href="{{ url('addbooking') }}"
-                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                                    <span class="material-icons mr-3">add_circle_outline</span>
-                                    Book Hire
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ url('bookings') }}"
-                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                                    <span class="material-icons mr-3">history</span>
-                                    Booking History
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ url('postbookings') }}"
-                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                                    <span class="material-icons mr-3">check_circle_outline</span>
-                                    Completed Businesses
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="flex items-center px-6 py-3 text-white font-semibold rounded-l-full cursor-default">
-                            <span class="material-icons mr-3">people</span>
-                            Customers
-                        </div>
-                        <ul class="ml-8 space-y-1">
-                            <li>
-                                <a href="{{ route('customers.create') }}"
-                                    class="flex items-center px-6 py-3 text-teal-500 font-semibold bg-slate-800 rounded-l-full">
                                     <span class="material-icons mr-3">person_add</span>
-                                    Add Customer
+                                    Add Player
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('customers.index') }}"
+                                <a href="{{ route('players.index') }}"
                                     class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
                                     <span class="material-icons mr-3">list</span>
-                                    All Customers
+                                    All Players
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="{{ url('hr-management') }}"
-                            class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                            <span class="material-icons mr-3">badge</span>
-                            HRM
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('crms') }}"
-                            class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                            <span class="material-icons mr-3">support_agent</span>
-                            CRM
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('inventory.index') }}"
-                            class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                            <span class="material-icons mr-3">inventory_2</span>
-                            Inventory
-                        </a>
                     </li>
                     <li>
                         <div class="flex items-center px-6 py-3 text-white font-semibold rounded-l-full cursor-default">
-                            <span class="material-icons mr-3">account_balance_wallet</span>
-                            Finance
+                            <span class="material-icons mr-3">person</span>
+                            Coaches
                         </div>
                         <ul class="ml-8 space-y-1">
                             <li>
-                                <a href="{{ url('expenses') }}"
+                                <a href="{{ route('coaches.create') }}"
                                     class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                                    <span class="material-icons mr-3">receipt_long</span>
-                                    Expenses
+                                    <span class="material-icons mr-3">person_add</span>
+                                    Add Coach
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ url('profit-loss-report') }}"
+                                <a href="{{ route('coaches.index') }}"
                                     class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                                    <span class="material-icons mr-3">bar_chart</span>
-                                    P/L Report
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ url('commission') }}"
-                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
-                                    <span class="material-icons mr-3">bar_chart</span>
-                                    Commission
+                                    <span class="material-icons mr-3">list</span>
+                                    All Coaches
                                 </a>
                             </li>
                         </ul>
                     </li>
-                </ul> --}}
+                    <li>
+                        <div class="flex items-center px-6 py-3 text-white font-semibold rounded-l-full cursor-default">
+                            <span class="material-icons mr-3">sports</span>
+                            Matches
+                        </div>
+                        <ul class="ml-8 space-y-1">
+                            <li>
+                                <a href="{{ route('matches.create') }}"
+                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                                    <span class="material-icons mr-3">add</span>
+                                    Add Match
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('matches.index') }}"
+                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                                    <span class="material-icons mr-3">list</span>
+                                    All Matches
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </nav>
         </aside>
         <!-- Main Content -->
@@ -179,7 +122,6 @@
                 </div>
             </header>
             <main class="flex-1 w-full px-0 py-0 flex flex-col h-[calc(100vh-5rem)]">
-t
             </main>
         </div>
     </div>

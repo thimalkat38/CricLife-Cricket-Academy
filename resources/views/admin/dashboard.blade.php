@@ -22,6 +22,81 @@
                 <span class="text-white text-4xl font-semibold font-poppins">ife</span>
             </div>
             <nav class="flex-1 mt-6">
+                <ul class="space-y-1">
+                    <li>
+                        <a href="{{ route('admin.dashboard') }}"
+                            class="flex items-center px-6 py-3 text-teal-500 font-semibold bg-slate-800 rounded-l-full">
+                            <span class="material-icons mr-3">dashboard</span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center px-6 py-3 text-white font-semibold rounded-l-full cursor-default">
+                            <span class="material-icons mr-3">sports_cricket</span>
+                            Players
+                        </div>
+                        <ul class="ml-8 space-y-1">
+                            <li>
+                                <a href="{{ route('admin.players.create') }}"
+                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                                    <span class="material-icons mr-3">person_add</span>
+                                    Add Player
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.players.index') }}"
+                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                                    <span class="material-icons mr-3">list</span>
+                                    All Players
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flex items-center px-6 py-3 text-white font-semibold rounded-l-full cursor-default">
+                            <span class="material-icons mr-3">person</span>
+                            Coaches
+                        </div>
+                        <ul class="ml-8 space-y-1">
+                            <li>
+                                <a href="{{ route('admin.coaches.create') }}"
+                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                                    <span class="material-icons mr-3">person_add</span>
+                                    Add Coach
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.coaches.index') }}"
+                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                                    <span class="material-icons mr-3">list</span>
+                                    All Coaches
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="flex items-center px-6 py-3 text-white font-semibold rounded-l-full cursor-default">
+                            <span class="material-icons mr-3">sports</span>
+                            Matches
+                        </div>
+                        <ul class="ml-8 space-y-1">
+                            <li>
+                                <a href="{{ route('admin.matches.create') }}"
+                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                                    <span class="material-icons mr-3">add</span>
+                                    Add Match
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.matches.index') }}"
+                                    class="flex items-center px-6 py-3 text-gray-300 hover:bg-slate-800 hover:text-white transition">
+                                    <span class="material-icons mr-3">list</span>
+                                    All Matches
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
                 {{-- <ul class="space-y-1">
                     <li>
                         <a href="{{ url('manager/dashboard') }}"
